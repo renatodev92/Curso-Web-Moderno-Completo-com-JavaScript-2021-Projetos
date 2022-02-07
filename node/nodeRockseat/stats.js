@@ -1,9 +1,6 @@
 const os = require('os')
 
 
-
-
-
 setInterval(() => {
     const { freemem, totalmem } = os
 
@@ -20,9 +17,10 @@ setInterval(() => {
 
     }
 
-    console.clear()
+  
     console.log(`=======PC STATS=======`)
     console.table(stats)
 
+}, 2000)
 
-}, 5000)
+
